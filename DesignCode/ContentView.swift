@@ -64,7 +64,7 @@ struct ContentView: View {
                 .animation(.spring(response: 0.3, dampingFraction: 0.6, blendDuration: 0))
                 .onTapGesture {
                     self.showCard.toggle()
-                }
+            }
             .gesture(
                 DragGesture().onChanged { value in
                     self.viewState = value.translation
@@ -80,29 +80,29 @@ struct ContentView: View {
                 .offset(y: bottomState.height)
                 .blur(radius: show ? 20 : 0)
                 .animation(.timingCurve(0.2, 0.8, 0.2, 1, duration: 0.8))
-            .gesture(
-                DragGesture().onChanged { value in
-                    self.bottomState = value.translation
-                    if self.showFull {
-                        self.bottomState.height += -300
+                .gesture(
+                    DragGesture().onChanged { value in
+                        self.bottomState = value.translation
+                        if self.showFull {
+                            self.bottomState.height += -300
+                        }
+                        
+                        if self.bottomState.height < -300 {
+                            self.bottomState.height = -300
+                        }
                     }
-                    
-                    if self.bottomState.height < -300 {
-                        self.bottomState.height = -300
+                    .onEnded { value in
+                        if self.bottomState.height > 50 {
+                            self.showCard = false
+                        }
+                        if (self.bottomState.height < -100 && !self.showFull) || (self.bottomState.height < -250 && self.showFull) {
+                            self.bottomState.height = -300
+                            self.showFull = true
+                        } else {
+                            self.bottomState = .zero
+                            self.showFull = false
+                        }
                     }
-                }
-                .onEnded { value in
-                    if self.bottomState.height > 50 {
-                        self.showCard = false
-                    }
-                    if (self.bottomState.height < -100 && !self.showFull) || (self.bottomState.height < -250 && self.showFull) {
-                        self.bottomState.height = -300
-                        self.showFull = true
-                    } else {
-                        self.bottomState = .zero
-                        self.showFull = false
-                    }
-                }
             )
         }
     }
