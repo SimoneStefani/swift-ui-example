@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FC2FB3BC244349D50068397C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FB3BB244349D50068397C /* Home.swift */; };
 		FC2FB3BE2443681B0068397C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FB3BD2443681B0068397C /* HomeView.swift */; };
+		FC2FB3C024444C910068397C /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FB3BF24444C910068397C /* UpdateList.swift */; };
 		FC5F50DD2441A40D0052FDA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F50DC2441A40D0052FDA7 /* AppDelegate.swift */; };
 		FC5F50DF2441A40D0052FDA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F50DE2441A40D0052FDA7 /* SceneDelegate.swift */; };
 		FC5F50E12441A40D0052FDA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F50E02441A40D0052FDA7 /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		FC2FB3BB244349D50068397C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		FC2FB3BD2443681B0068397C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FC2FB3BF24444C910068397C /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
 		FC5F50D92441A40D0052FDA7 /* DesignCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5F50DC2441A40D0052FDA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC5F50DE2441A40D0052FDA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				FC5F50EA2441A40E0052FDA7 /* Info.plist */,
 				FC5F50E42441A40E0052FDA7 /* Preview Content */,
 				FC5F50F02441D99C0052FDA7 /* MenuView.swift */,
+				FC2FB3BF24444C910068397C /* UpdateList.swift */,
 				FC2FB3BB244349D50068397C /* Home.swift */,
 				FC2FB3BD2443681B0068397C /* HomeView.swift */,
 			);
@@ -156,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC5F50DD2441A40D0052FDA7 /* AppDelegate.swift in Sources */,
+				FC2FB3C024444C910068397C /* UpdateList.swift in Sources */,
 				FC5F50F12441D99C0052FDA7 /* MenuView.swift in Sources */,
 				FC5F50DF2441A40D0052FDA7 /* SceneDelegate.swift in Sources */,
 				FC2FB3BE2443681B0068397C /* HomeView.swift in Sources */,
